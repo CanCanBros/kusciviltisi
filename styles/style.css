@@ -1,0 +1,11 @@
+:root {
+  --main-bg-color: #15202b;
+  --text-color: #fff;
+  --link-color: #1da1f2;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+}
