@@ -3,6 +3,8 @@
   --alt-bg-color: #192735;
   --text-color: #fff;
   --link-color: #1da1f2;
+  --alt-link-color: #8899a6;
+  --link-hover-bg-color: #162f42;
   --border-color: #38444d;
 }
 
@@ -12,6 +14,38 @@ body {
   color: var(--text-color);
 }
 
+section.left .menu a {
+  display: inline-block;
+  margin: .25em 0;
+  border-radius: 2em;
+  font-size: 19px;
+  color: var(--text-color);
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+section.left .menu a:hover {
+  color: var(--link-color);
+  background-color: var(--link-hover-bg-color); 
+}
+
+section.left .menu .active a {
+  color: var(--link-color);
+}
+
+section.left .menu a i {
+  font-size: 1.25em;
+}
+
+section.left .menu a span {
+  margin: 0 .8em;
+}
+
+section.left button.button {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
 .feeds {
   border: 1px solid var(--border-color);
   border-top: none;
@@ -19,11 +53,17 @@ body {
   min-height: 100vh;
 }
 
+.entry {
+  border-bottom: 10px solid var(--border-color);
+}
+
 .post {
-  border: 1px solid var(--border-color);
-  border-left: none;
-  border-right: none;
+  border-bottom: 1px solid var(--border-color);
   padding: 1em;
+}
+
+section.right > * {
+  margin-bottom: 15px;
 }
 
 section.right .card {
@@ -32,4 +72,17 @@ section.right .card {
 
 section.right .card * {
   color: var(--text-color);
+}
+
+section.right footer,
+section.right footer a {
+  margin: 2px 0;
+  padding-right: 10px;
+  font-size: 13px;
+  color: var(--alt-link-color);
+  line-height: 20px;
+}
+
+section.right footer a:hover {
+  text-decoration: underline;
 }

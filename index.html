@@ -6,34 +6,91 @@
   <title>Kusciviltisi.com</title>
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css'>
   <link rel='stylesheet' href='./styles/style.css'>
-  <script src="https://kit.fontawesome.com/622157f039.js" crossorigin="anonymous"></script>
+  <script src='https://kit.fontawesome.com/622157f039.js' crossorigin='anonymous'></script>
 </head>
 <body>
   <div class='container'>
     <div class='columns'>
-      <div class='column is-3'>
-        <div class='sidebar-menu'>
-          <ul>
-            <li>Home</li>
-            <li>Explore</li>
-            <li>Notifications</li>
-            <li>Messages</li>
-            <li>Bookmarks</li>
-            <li>Lists</li>
-            <li>Profile</li>
-            <li>More</li>
-          </ul>
-          <button class='button is-info'>
+      <div class='column is-2'>
+        <section class="left">
+          <aside class='menu'>
+            <ul class="menu-list">
+              <li>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              
+              <li class='active'>
+                <a href="#">
+                  <i class="fas fa-home"></i> 
+                  <span>Home</span>
+                </a>
+              </li>
+              
+              <li>
+                <a href="#">
+                  <i class="fas fa-hashtag"></i> 
+                  <span>Explore</span>
+                </a>
+              </li>
+              
+              <li>
+                <a href="#">
+                  <i class="far fa-bell"></i> 
+                  <span>Notifications</span>
+                </a>
+              </li>
+              
+              <li>
+                <a href="#">
+                  <i class="far fa-envelope"></i> 
+                  <span>Messages</span>
+                </a>
+              </li>
+              
+              <li>
+                <a href="#">
+                  <i class="far fa-bookmark"></i> 
+                  <span>Bookmarks</span>
+                </a>
+              </li>
+              
+              <li>
+                <a href="#">
+                  <i class="fas fa-list"></i> 
+                  <span>Lists</span>
+                </a>
+              </li>
+              
+              <li>
+                <a href="#">
+                  <i class="far fa-user"></i> 
+                  <span>Profile</span>
+                </a>
+              </li>
+              
+              <li>
+                <a href="#">
+                  <i class="fas fa-ellipsis-h"></i> 
+                  <span>More</span>
+                </a>
+              </li>
+            </ul>
+          </aside>
+          
+          <button class='button is-info is-fullwidth is-rounded'>
             Tweet
           </button>
-        </div>
+        </section>
       </div>
 
       <div class='column is-6'>
         <div class='feeds'>
           <div class='entry'>
-            <input type='text'>
+            <input type='text' placeholder="What's happening?">
           </div>
+
           <div class='post'>
             <div class='media'>
               <div class='media-left'>
@@ -42,32 +99,32 @@
                 </figure>
               </div>
 
-              <div class="media-content">
-                <div class="name">BBC News Türkçe</div>
-                <div class="username">bbcturkce</div>
-                <div class="post-time">1m</div>
+              <div class='media-content'>
+                <div class='name'>BBC News Türkçe</div>
+                <div class='username'>bbcturkce</div>
+                <div class='post-time'>1m</div>
                 <div>></div>
-                <div class="post-content">
-                  Koronavirüs - WHO: Ortadoğu kritik bir eşikte <a href="https://bbc.in/2VDvZtv" target='_blank'>https://bbc.in/2VDvZtv</a>
+                <div class='post-content'>
+                  Koronavirüs - WHO: Ortadoğu kritik bir eşikte <a href='https://bbc.in/2VDvZtv' target='_blank'>https://bbc.in/2VDvZtv</a>
                 </div>
                 <figure>
-                  <img src="https://pbs.twimg.com/media/Eb3Sf_OXQAElXX0?format=jpg&name=small" alt="">
+                  <img src='https://pbs.twimg.com/media/Eb3Sf_OXQAElXX0?format=jpg&name=small' alt=''>
                 </figure>
-                <div class="columns">
-                  <div class="column">
-                    <i class="far fa-comment"></i> 4
+                <div class='columns'>
+                  <div class='column'>
+                    <i class='far fa-comment'></i> 4
                   </div>
 
-                  <div class="column">
-                    <i class="fas fa-retweet"></i> 6
+                  <div class='column'>
+                    <i class='fas fa-retweet'></i> 6
                   </div>
 
-                  <div class="column">
-                    <i class="far fa-heart"></i> 22
+                  <div class='column'>
+                    <i class='far fa-heart'></i> 22
                   </div>
 
-                  <div class="column">
-                    <i class="fas fa-sign-out-alt" style='transform: rotate(-90deg)'></i>
+                  <div class='column'>
+                    <i class='fas fa-sign-out-alt' style='transform: rotate(-90deg)'></i>
                   </div>
                 </div>
               </div>
@@ -76,24 +133,25 @@
         </div>
       </div>
 
-      <div class='column is-3'>
-        <section class="right">
+      <div class='column is-4'>
+        <section class='right'>
 
-          <input type="search" placeholder='Search Twitter'>
-          <div class="card">
-            <div class="card-header">
-              <div class="card-header-title">
+          <input type='search' placeholder='Search Twitter'>
+
+          <div class='card'>
+            <div class='card-header'>
+              <div class='card-header-title'>
                 Trends for you
               </div>
 
-              <a class="card-header-icon">
-                <span class="icon">
-                  <i class="fas fa-cog"></i>
+              <a class='card-header-icon'>
+                <span class='icon'>
+                  <i class='fas fa-cog'></i>
                 </span>
               </a>
             </div>
             
-            <div class="card-content">
+            <div class='card-content'>
               <ul>
                 <li>#AkGençlikHesaplarınıKapatıyor</li>
                 <li>#SosyalMedyamaDOKUNMA</li>
@@ -102,6 +160,34 @@
               </ul>
             </div>
           </div>
+
+          <div class='card'>
+            <div class='card-header'>
+              <div class='card-header-title'>
+                Who to follow
+              </div>
+            </div>
+            
+            <div class='card-content'>
+              <ul>
+                <li>#AkGençlikHesaplarınıKapatıyor</li>
+                <li>#SosyalMedyamaDOKUNMA</li>
+                <li>#SosyalMedyaYasasıÇıksın</li>
+                <li>TikTok</li>
+              </ul>
+            </div>
+          </div>
+
+          <footer>
+            <nav>
+              <a href='#'>Terms</a>
+              <a href='#'>Privacy policy</a>
+              <a href='#'>Cookies</a>
+              <a href='#'>Ads info</a>
+              <a href='#'>More ></a>
+              <span>&copy; 2020 Kusciviltisi, Inc.</span>
+            </nav>
+          </footer>
         </section>
       </div>
     </div>
