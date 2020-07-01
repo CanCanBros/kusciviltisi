@@ -14,6 +14,13 @@ body {
   color: var(--text-color);
 }
 
+section.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
 section.left .menu a {
   display: inline-block;
   margin: .25em 0;
@@ -44,6 +51,10 @@ section.left .menu a span {
 section.left button.button {
   margin-top: 1em;
   font-weight: bold;
+}
+
+section.left .usermenu {
+  /* align-self: end; */
 }
 
 .feeds {
