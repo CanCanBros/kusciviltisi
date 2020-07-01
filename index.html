@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>Kusciviltisi.com</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css'>
+  <link rel='stylesheet' href='./styles/style.css'>
+  <script src="https://kit.fontawesome.com/622157f039.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
-    <div class="columns">
-      <div class="col is-3">
-        <div class="sidebar-menu">
+  <div class='container'>
+    <div class='columns'>
+      <div class='column is-3'>
+        <div class='sidebar-menu'>
           <ul>
             <li>Home</li>
             <li>Explore</li>
@@ -22,14 +23,87 @@
             <li>Profile</li>
             <li>More</li>
           </ul>
-          <button class="button is-info">
+          <button class='button is-info'>
             Tweet
           </button>
         </div>
       </div>
-      <div class="col is-3"></div>
-      <div class="col is-3"></div>
-      <div class="col is-3"></div>
+
+      <div class='column is-6'>
+        <div class='feeds'>
+          <div class='entry'>
+            <input type='text'>
+          </div>
+          <div class='post'>
+            <div class='media'>
+              <div class='media-left'>
+                <figure class='image is-48x48'>
+                  <img class='is-rounded' src='https://bulma.io/images/placeholders/128x128.png'>
+                </figure>
+              </div>
+
+              <div class="media-content">
+                <div class="name">BBC News Türkçe</div>
+                <div class="username">bbcturkce</div>
+                <div class="post-time">1m</div>
+                <div>></div>
+                <div class="post-content">
+                  Koronavirüs - WHO: Ortadoğu kritik bir eşikte <a href="https://bbc.in/2VDvZtv" target='_blank'>https://bbc.in/2VDvZtv</a>
+                </div>
+                <figure>
+                  <img src="https://pbs.twimg.com/media/Eb3Sf_OXQAElXX0?format=jpg&name=small" alt="">
+                </figure>
+                <div class="columns">
+                  <div class="column">
+                    <i class="far fa-comment"></i> 4
+                  </div>
+
+                  <div class="column">
+                    <i class="fas fa-retweet"></i> 6
+                  </div>
+
+                  <div class="column">
+                    <i class="far fa-heart"></i> 22
+                  </div>
+
+                  <div class="column">
+                    <i class="fas fa-sign-out-alt" style='transform: rotate(-90deg)'></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class='column is-3'>
+        <section class="right">
+
+          <input type="search" placeholder='Search Twitter'>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-header-title">
+                Trends for you
+              </div>
+
+              <a class="card-header-icon">
+                <span class="icon">
+                  <i class="fas fa-cog"></i>
+                </span>
+              </a>
+            </div>
+            
+            <div class="card-content">
+              <ul>
+                <li>#AkGençlikHesaplarınıKapatıyor</li>
+                <li>#SosyalMedyamaDOKUNMA</li>
+                <li>#SosyalMedyaYasasıÇıksın</li>
+                <li>TikTok</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   </div>
 </body>

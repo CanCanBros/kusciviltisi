@@ -1,11 +1,35 @@
 :root {
   --main-bg-color: #15202b;
+  --alt-bg-color: #192735;
   --text-color: #fff;
   --link-color: #1da1f2;
+  --border-color: #38444d;
 }
 
 body {
   min-height: 100vh;
   background-color: var(--main-bg-color);
+  color: var(--text-color);
+}
+
+.feeds {
+  border: 1px solid var(--border-color);
+  border-top: none;
+  border-bottom: none;
+  min-height: 100vh;
+}
+
+.post {
+  border: 1px solid var(--border-color);
+  border-left: none;
+  border-right: none;
+  padding: 1em;
+}
+
+section.right .card {
+  background-color: var(--alt-bg-color);
+}
+
+section.right .card * {
   color: var(--text-color);
 }
